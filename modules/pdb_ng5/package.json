@@ -1,0 +1,51 @@
+{
+  "name": "pdb_ng2",
+  "version": "1.0.1",
+  "description": "Decoupled Blocks Angular 2 dependencies",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mrjmd/pdb.git"
+  },
+  "contributors": [
+    "Matt Davis"
+  ],
+  "license": "UNLICENSED",
+  "readmeFilename": "README.txt",
+  "scripts": {
+    "start": "npm install",
+    "postinstall": "typings install",
+    "tsc": "tsc",
+    "tsc:aot": "tsc -p tsconfig-aot.json --listEmittedFiles",
+    "tsc:w": "tsc -w",
+    "typings": "typings"
+  },
+  "dependencies": {
+    "@angular/common": "^5.2.8",
+    "@angular/compiler": "^5.2.8",
+    "@angular/core": "^5.2.8",
+    "@angular/forms": "^5.2.8",
+    "@angular/http": "^5.2.8",
+    "@angular/platform-browser": "^5.2.8",
+    "@angular/platform-browser-dynamic": "^5.2.8",
+    "@types/node": "^9.4.7",
+    "core-js": "2.5.1",
+    "deferred": "0.7.8",
+    "moment": "^2.18.1",
+    "ng2-charts": "^1.6.0",
+    "ngc": "^1.0.0",
+    "plugin-typescript": "^7.1.0",
+    "reflect-metadata": "0.1.10",
+    "rxjs": "5.5.7",
+    "systemjs": "^0.19.37",
+    "typescript": "^2.5.3",
+    "underscore": "^1.8.3",
+    "zone.js": "^0.8.19"
+  },
+  "devDependencies": {
+    "@types/core-js": "0.9.43",
+    "@types/systemjs": "0.20.5",
+    "gulp": "^3.9.0",
+    "del": "^2.2.0",
+    "typings": "^1.4.0"
+  }
+}

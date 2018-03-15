@@ -1,0 +1,42 @@
+{
+  "compilerOptions": {
+    "target": "es5",
+    "module": "es6",
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "pretty": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true,
+    "removeComments": true,
+    "skipLibCheck": true,
+    "suppressImplicitAnyIndexErrors": true,
+    "lib": ["es7", "dom"],
+    "baseUrl": "./",
+    "paths": {
+      "classes/*": [
+        "assets/classes/*"
+      ],
+      "helpers/*": [
+        "assets/helpers/*"
+      ]
+    },
+    "typeRoots": [ "./typings" ],
+    "types": [
+      "core-js",
+      "systemjs",
+      "node"
+    ]
+  },
+  "exclude": [
+    "node_modules",
+    "typings"
+  ],
+  "files": [
+    "assets/app/app-aot.ts"
+  ],
+
+  "angularCompilerOptions": {
+    "genDir": "aot",
+    "skipMetadataEmit" : true
+  }
+}
