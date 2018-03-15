@@ -1,0 +1,9 @@
+name: NG5 ToDo
+machine_name: ng2-todo
+type: pdb
+description: 'NG 5 ToDo example component'
+package: NG5
+version: '1.0.0'
+core: '8.x'
+module_status: active
+presentation: ng5

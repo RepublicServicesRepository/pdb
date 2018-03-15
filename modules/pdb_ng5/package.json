@@ -1,7 +1,7 @@
 {
-  "name": "pdb_ng2",
+  "name": "pdb_ng5",
   "version": "1.0.1",
-  "description": "Decoupled Blocks Angular 2 dependencies",
+  "description": "Decoupled Blocks Angular 5 dependencies",
   "repository": {
     "type": "git",
     "url": "https://github.com/mrjmd/pdb.git"

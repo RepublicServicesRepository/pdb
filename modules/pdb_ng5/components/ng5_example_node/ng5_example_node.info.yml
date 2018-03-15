@@ -1,0 +1,11 @@
+name: NG5 Example Node
+machine_name: ng5-example-node
+type: pdb
+description: 'NG 5 Example Component Node'
+package: NG5
+version: '1.0.0'
+core: '8.x'
+module_status: active
+presentation: ng5
+contexts:
+  entity: node

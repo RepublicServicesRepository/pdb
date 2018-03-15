@@ -1,0 +1,8 @@
+name: PDB Angular 5
+type: module
+description: 'Turns on Angular 5 framework for use by PDB'
+package: PDB
+configure: pdb_ng5.form
+core: '8.x'
+dependencies:
+  - pdb

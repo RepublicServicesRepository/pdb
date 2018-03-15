@@ -1,0 +1,9 @@
+name: NG5 Hero
+machine_name: ng5-hero
+type: pdb
+description: 'NG 5 Hero block, a basic example'
+package: NG5
+version: '1.0.0'
+core: '8.x'
+module_status: active
+presentation: ng5

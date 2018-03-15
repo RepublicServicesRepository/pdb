@@ -46,11 +46,11 @@
     return extended;
   }
 
-  var modulePath = drupalSettings.path.baseUrl + drupalSettings.pdb.ng2.module_path;
+  var modulePath = drupalSettings.path.baseUrl + drupalSettings.pdb.ng5.module_path;
 
   // Set default extension to .ts or .js.
   var ext = 'ts';
-  if (drupalSettings.pdb.ng2.development_mode === 0) {
+  if (drupalSettings.pdb.ng5.development_mode === 0) {
     ext = 'js';
   }
 
@@ -122,13 +122,13 @@
   });
 
   // Our components may make additions via their YAML files, add them.
-  if ('system_config' in drupalSettings.pdb.ng2) {
-    if ('packages' in drupalSettings.pdb.ng2.system_config) {
-      packages = extend(true, packages, drupalSettings.pdb.ng2.system_config.packages);
+  if ('system_config' in drupalSettings.pdb.ng5) {
+    if ('packages' in drupalSettings.pdb.ng5.system_config) {
+      packages = extend(true, packages, drupalSettings.pdb.ng5.system_config.packages);
     }
-    if ('paths' in drupalSettings.pdb.ng2.system_config) {
-      for (var prop in drupalSettings.pdb.ng2.system_config.paths) {
-        paths[prop] = modulePath + drupalSettings.pdb.ng2.system_config.paths[prop];
+    if ('paths' in drupalSettings.pdb.ng5.system_config) {
+      for (var prop in drupalSettings.pdb.ng5.system_config.paths) {
+        paths[prop] = modulePath + drupalSettings.pdb.ng5.system_config.paths[prop];
       }
     }
 

@@ -1,0 +1,7 @@
+pdb_ng2.form:
+  path: '/admin/config/services/pdb-ng5'
+  defaults:
+    _title: 'PDB Angular5'
+    _form: '\Drupal\pdb_ng5\Form\PdbNg5Form'
+  requirements:
+    _permission: 'access administration pages'

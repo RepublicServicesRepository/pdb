@@ -12,9 +12,9 @@ import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';
 import {ScrollLoader} from 'classes/scroll-loader';
 import {GlobalProviders} from 'classes/global-providers';
 
-// Components contains metadata about all ng2 components on the page.
+// Components contains metadata about all 5 components on the page.
 // TODO: This has got to consume a manifest w/ same info as drupalSettings.
-const components = drupalSettings.pdb.ng2.components;
+const components = drupalSettings.pdb.ng5.components;
 
 // Dynamically load all globally shared @Injectable services and pass as
 // providers into main app bootstrap.
