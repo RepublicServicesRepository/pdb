@@ -10,7 +10,7 @@ use Drupal\Core\Form\FormStateInterface;
  *
  * @package Drupal\pdb_ng5\Form
  */
-class PdbNg2Form extends ConfigFormBase {
+class PdbNg5Form extends ConfigFormBase {
 
   /**
    * {@inheritdoc}
