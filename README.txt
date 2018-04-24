@@ -2,6 +2,7 @@
 CONTENTS OF THIS FILE
 ---------------------
 
+ * iCrossing NOTES
  * Introduction
  * Requirements
  * Installation
@@ -9,6 +10,18 @@ CONTENTS OF THIS FILE
  * Developing for PDB
  * Maintainers
 
+iCrossing NOTES
+---------------
+
+This is a custom WORK IN PROGRESS version of Decoupled Blocks which builds using Angular 5.
+Install this repository in a drupal 8 modules folder and install via the drupal admin. 
+This can be added to the modules folder using git clone.
+
+A few notes:
+ * This version doesn't function in "developer" mode due to incompatibilities with System.js
+ * Instead of running 'npm tsc' to build as described below, use the new 'npm tsc:aot' to build
+ * There is a lot of work to be done on this module to improve stability and to add more complete and updated examples.
+ * Current examples don't seem to respond to some events properly which appears to be due to their not having been updated for NG5
 
 INTRODUCTION
 ------------
