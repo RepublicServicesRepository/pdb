@@ -14,7 +14,8 @@ iCrossing NOTES
 ---------------
 
 This is a custom WORK IN PROGRESS version of Decoupled Blocks which builds using Angular 5.
-_Install_
+
+INSTALLATION:
 Install this repository in a drupal 8 modules folder and install via the drupal admin.
  * This can be added to the modules folder using git clone.
 After installing, navigate to the pdb_ng5 folder and execute 'npm i' followed by 'npm run tsc:aot' to compile the example components.
