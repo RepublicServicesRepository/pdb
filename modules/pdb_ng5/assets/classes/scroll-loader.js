@@ -5,7 +5,7 @@ var Observable_1 = require("rxjs/Observable");
 require("rxjs/add/observable/fromEvent");
 require("rxjs/add/operator/debounceTime");
 var lazy_load_component_1 = require("helpers/lazy-load-component");
-if (drupalSettings.pdb.ng2.development_mode === 0) {
+if (drupalSettings.pdb.ng5.development_mode === 0) {
     core_1.enableProdMode();
 }
 var ScrollLoader = (function () {
@@ -63,7 +63,7 @@ var ScrollLoader = (function () {
     };
     ScrollLoader.prototype.bootstrapComponent = function (id, ngClassName, selector) {
         var _this = this;
-        var componentFile = Drupal.url(drupalSettings.pdb.ng2.components[id]["uri"]) + '/index';
+        var componentFile = Drupal.url(drupalSettings.pdb.ng5.components[id]["uri"]) + '/index';
         var ngModuleLoader = this.appModule.injector.get(core_1.SystemJsNgModuleLoader);
         return ngModuleLoader['loadAndCompile'](componentFile + "#" + ngClassName)
             .then(function (moduleFactory) {

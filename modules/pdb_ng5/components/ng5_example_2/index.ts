@@ -1,5 +1,5 @@
 /**
- * @module Ng2Example2
+ * @module Ng5Example2
  * @preferred
  */ /** */
 
@@ -10,7 +10,7 @@ import {FormsModule} from '@angular/forms';
 // external imports
 import {LazyLoadComponent} from 'helpers/lazy-load-component';
 // internal imports
-import {Ng2Example2} from './component';
+import {Ng5Example2} from './component';
 // exports
 export * from './globals';
 
@@ -20,13 +20,13 @@ export * from './globals';
         FormsModule
     ],
     providers: [
-        {provide: LazyLoadComponent, useValue: Ng2Example2}
+        {provide: LazyLoadComponent, useValue: Ng5Example2}
     ],
     declarations: [
-        Ng2Example2
+        Ng5Example2
     ],
     entryComponents: [
-        Ng2Example2
+        Ng5Example2
     ]
 })
-export class Ng2Example2Module {}
+export class Ng5Example2Module {}

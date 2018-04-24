@@ -65,7 +65,7 @@ export class GlobalProviders {
    * Helper function to convert component name to Angular 2 ClassName.
    *
    * @param {string} - elementName in form "wu-favorites"
-   * @returns {string} - ng2 class name in form "WuFavorites"
+   * @returns {string} - ng5 class name in form "WuFavorites"
    */
   private convertToNgClassName(elementName: string): string {
     return (elementName.toLowerCase().charAt(0).toUpperCase() +

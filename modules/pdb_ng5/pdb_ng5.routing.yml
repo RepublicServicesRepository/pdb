@@ -1,4 +1,4 @@
-pdb_ng2.form:
+pdb_ng5.form:
   path: '/admin/config/services/pdb-ng5'
   defaults:
     _title: 'PDB Angular5'

@@ -25,7 +25,7 @@ import 'rxjs/add/operator/debounceTime';
 // External imports
 import { LazyLoadComponent } from 'helpers/lazy-load-component';
 
-if (drupalSettings.pdb.ng2.development_mode === 0) {
+if (drupalSettings.pdb.ng5.development_mode === 0) {
   enableProdMode();
 }
 
@@ -43,7 +43,7 @@ export class ScrollLoader {
   public initialize(): void {
     // Get the components wrapper selector to search for components.
     // Defaults to body.
-    // let componentsWrapper = drupalSettings.pdb.ng2.components_wrapper;
+    // let componentsWrapper = drupalSettings.pdb.ng5.components_wrapper;
     let componentsWrapper = 'body';
 
     let content = document.querySelector(componentsWrapper);
@@ -128,7 +128,7 @@ export class ScrollLoader {
    * @param {string} selector - selctor of DOM element to bootstrap into
    */
   public bootstrapComponent(id: string, ngClassName: string, selector: string): void {
-    let componentFile = Drupal.url(drupalSettings.pdb.ng2.components[id]["uri"]) + '/index';
+    let componentFile = Drupal.url(drupalSettings.pdb.ng5.components[id]["uri"]) + '/index';
 
     // load and compile the module lazy loaded
     const ngModuleLoader = this.appModule.injector.get(SystemJsNgModuleLoader);
@@ -186,7 +186,7 @@ export class ScrollLoader {
    * Helper function to convert component name to Angular 2 ClassName.
    *
    * @param {string} - elementName in form "wu-favorites"
-   * @returns {string} - ng2 class name in form "WuFavorites"
+   * @returns {string} - ng5 class name in form "WuFavorites"
    */
   public convertToNgClassName(elementName: string): string {
     return (elementName.toLowerCase().charAt(0).toUpperCase() +

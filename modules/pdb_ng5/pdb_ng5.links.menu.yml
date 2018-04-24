@@ -1,4 +1,4 @@
-pdb_ng2.admin_settings:
+pdb_ng5.admin_settings:
   title: 'PDB Angular5'
   description: 'Configure PDB NG5 Settings'
   route_name: pdb_ng5.form

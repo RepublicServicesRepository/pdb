@@ -1,5 +1,5 @@
 /**
- * @module Ng2Example1
+ * @module Ng5Example1
  * @preferred
  */ /** */
 
@@ -9,7 +9,7 @@ import {CommonModule} from '@angular/common';
 // external imports
 import {LazyLoadComponent} from 'helpers/lazy-load-component';
 // internal imports
-import {Ng2Example1} from './component';
+import {Ng5Example1} from './component';
 // exports
 export * from './globals';
 
@@ -18,13 +18,13 @@ export * from './globals';
         CommonModule
     ],
     providers: [
-        {provide: LazyLoadComponent, useValue: Ng2Example1}
+        {provide: LazyLoadComponent, useValue: Ng5Example1}
     ],
     declarations: [
-        Ng2Example1
+        Ng5Example1
     ],
     entryComponents: [
-        Ng2Example1
+        Ng5Example1
     ]
 })
-export class Ng2Example1Module {}
+export class Ng5Example1Module {}
